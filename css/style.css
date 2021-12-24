@@ -1,0 +1,106 @@
+body {
+  width: 1200px;
+}
+
+#output {
+  width: 1200px;
+  overflow: auto;
+  border: 10px solid black;
+  margin: 50px 100px;
+}
+
+div#output {
+  /* 画像の上に文字を表示する */
+  /* 同じファイルの中にある場合のurlの書き方　https://techacademy.jp/magazine/23884 */
+  /* 無料フリー画像サイト https://pixabay.com/ja/ */
+  background: url(./neko1.jpg);
+  background-size: cover;
+  background-size: 100%;
+}
+
+.textBox {
+  display: block;
+  margin: 0 0 0 100px;
+}
+
+.textBox1 {
+  width: 500px;
+  padding: 0 0 10px 0;
+}
+
+/* 先生の授業で勉強したこと */
+
+.message {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+input {
+  border: 1px solid #000;
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+/* even = 偶数 */
+/* odd  = 奇数 */
+/* 覚え方 even(4文字なので偶数)、その反対がodd(３文字なので偶数) */
+/*  */
+
+.update {
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  background: pink;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.update:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.delete {
+  width: 50px;
+  height: 50px;
+  background: gray;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.delete:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#send { 
+  border: none;
+  background: transparent;
+  /* 上2つはbuttonの枠線を外す */
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  background: url(./niku.png);
+  transition: all 1s linear 0s;
+	cursor: pointer;
+}
+
+#send:hover {
+	transform: rotateX(360deg);
+  /* https://haniwaman.com/hover/#index_id4 */
+}
